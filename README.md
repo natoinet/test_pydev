@@ -1,4 +1,4 @@
-Output is:
+The output with Pydev is:
 ```
 pydev debugger: starting (pid: 13268)
 utf-8
@@ -14,4 +14,12 @@ Traceback (most recent call last):
   File "/Users/antoinebrunel/.virtualenvs/test_pydev_venv/lib/python3.4/encodings/ascii.py", line 26, in decode
     return codecs.ascii_decode(input, self.errors)[0]
 UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 0: ordinal not in range(128)
+```
+
+The output while running it from the console is:
+```
+> . ~/test_pydev_venv/bin/activate
+> python test_pydev.py
+utf-8
+é
 ```
